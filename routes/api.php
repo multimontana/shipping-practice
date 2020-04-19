@@ -22,3 +22,7 @@ Route::post('login','Api\AuthController@login');
 
 Route::post('/password/email', 'Api\ForgotPasswordController@sendResetLinkEmail');
 Route::post('/password/reset', 'Api\ResetPasswordController@reset');
+
+
+Route::apiResource('operator', 'OperatorController');
+Route::apiResource('orders', 'OrdersController');
